@@ -1,0 +1,40 @@
+{
+  "name": "roman-number-converter",
+  "version": "0.1.0",
+  "description": "Just a simple test",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --open http://localhost:8081 --host 0.0.0.0 --port 8081 --history-api-fallback",
+    "build": "./node_modules/.bin/webpack --config webpack.production.js",
+    "deploy": "git push",
+    "test": "jest --watchAll"
+  },
+  "author": "Zhengyi Li",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^23.4.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.0.6",
+    "jest": "^23.4.1",
+    "offline-plugin": "^5.0.0-0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "script-ext-html-webpack-plugin": "^2.0.1",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.3",
+    "webpack": "^4.16.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

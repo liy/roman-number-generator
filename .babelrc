@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env"],
+    "stage-0"
+  ],
+  "plugins": ["transform-runtime", "transform-export-extensions"],
+  "comments": false,
+  "env": {
+    "targets": {
+      "browsers": ["last 2 versions", "safari >= 7"]
+    }
+  }
+}
