@@ -27,7 +27,7 @@ export default class RomanNumberGenerator
 
     let romanNumeral = '';
 
-    // Basically, iteratively calulcate the largest the factor(existed in the table) of the remain number.
+    // Basically, iteratively calulcate the largest factor(existed in the table) of the remain number.
     for(let [symbol, value] of CONVERSION_TABLE) {
       // Factor will be the number of corresponding roman numeral symbols
       let numSymbols = Math.floor(number / value);
