@@ -6,7 +6,7 @@
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --open http://localhost:8081 --host 0.0.0.0 --port 8081 --history-api-fallback",
     "build": "./node_modules/.bin/webpack --config webpack.production.js",
-    "deploy": "git push",
+    "deploy": "jest && npm run build && firebase deploy",
     "test": "jest --watchAll"
   },
   "author": "Zhengyi Li",

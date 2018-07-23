@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const OfflinePlugin = require('offline-plugin');
 
 module.exports = {
   mode: 'production',
@@ -117,13 +116,6 @@ module.exports = {
     }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async'
-    }),
-    new OfflinePlugin({
-      // default auto update the resource in interval of 1 hour
-      autoUpdate: true,
-      externals: [
-        'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js'
-      ],
     }),
   ],
   
