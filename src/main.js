@@ -5,7 +5,7 @@ let output = document.getElementById('output');
 
 let generator = new RomanNumberGenerator();
 
-input.addEventListener('change', e => {
+input.addEventListener('input', e => {
   let symbol = generator.generate(Number(input.value));
   if(symbol) {
     output.textContent = symbol;
