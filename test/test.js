@@ -80,7 +80,7 @@ describe('Roman number generator', () => {
     expect(generator.generate(900)).toBe('CM');
   });
 
-  it('1000 should be CM', () => {
+  it('1000 should be M', () => {
     expect(generator.generate(1000)).toBe('M');
   });
 })
